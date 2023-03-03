@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserService should be get all users 1`] = `
+[
+  User {
+    "email": "",
+    "id": "1",
+    "password": "",
+    "username": "",
+  },
+  User {
+    "email": "",
+    "id": "2",
+    "password": "",
+    "username": "",
+  },
+  User {
+    "email": "",
+    "id": "3",
+    "password": "",
+    "username": "user3",
+  },
+  User {
+    "email": "sunny5771@hotmail.com",
+    "id": "4",
+    "password": "Junhui8888",
+    "username": "user4",
+  },
+]
+`;

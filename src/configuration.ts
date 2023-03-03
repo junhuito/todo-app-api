@@ -17,9 +17,7 @@ const useEnvironment = (extension: string): string => {
 };
 
 export const CONFIG_MODULE_ROOT: ConfigModule = ConfigModule.forRoot({
-  envFilePath: `${process.cwd()}/config/.env.${useEnvironment(
-    process.env.NODE_ENV,
-  )}`,
+  envFilePath: `${process.cwd()}/.env.${useEnvironment(process.env.NODE_ENV)}`,
   isGlobal: true,
 });
 

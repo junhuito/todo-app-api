@@ -26,7 +26,7 @@ export const TYPE_ORM_MODULE_ROOT: TypeOrmModule = TypeOrmModule.forRootAsync({
   useFactory: (config: ConfigService): TypeOrmModuleOptions => ({
     type: 'postgres',
     host: config.get<string>('DB_HOST'),
-    port: config.get<number>('DB_PORT'),
+    port: Number(config.get<number>('DB_PORT')),
     username: config.get<string>('DB_USERNAME'),
     password: config.get<string>('DB_PASSWORD'),
     database: config.get<string>('DB_NAME'),
